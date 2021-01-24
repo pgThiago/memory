@@ -110,4 +110,8 @@ body {
     .card-front, .card-back {
         border-radius: 5px;
     }
+
+    #restart {
+        font-size: 16px;
+    }
 }
