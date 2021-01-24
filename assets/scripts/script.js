@@ -71,13 +71,13 @@ function createCardFace(face, card, element){
     element.appendChild(cardElementFace);
 }
 
-// function restart(){
-//     window.reload();
-// }
-
 function restart(){
-    game.clearCards();
-    let gameOverLayer = document.getElementById('game-over');
-    gameOverLayer.style.display = 'none';   
-    startGame();
+    window.reload();
 }
+
+// function restart(){
+//     game.clearCards();
+//     let gameOverLayer = document.getElementById('game-over');
+//     gameOverLayer.style.display = 'none';   
+//     startGame();
+// }
