@@ -45,7 +45,7 @@ function flipCard(){
                     firsCardView.classList.remove(FLIP);
                     secondCardView.classList.remove(FLIP);
                     game.unflipCards();
-                }, 1000);
+                }, 2000);
             }
         }
     }

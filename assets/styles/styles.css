@@ -8,18 +8,25 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgba(0, 0, 0);
 
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #game-board {
-    max-width: 700px;
-
+    width: 100vw;
+    height: 100vh;
+    
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1%;
+    margin-top: 2%;
+
+    justify-items: center;
 }
 
 .card {
@@ -27,8 +34,19 @@ body {
     height: 100px;
     position: relative;
     transform-style: preserve-3d;
-    transition: 0.1s linear;
+    transition: 1s linear;
     cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .card {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card-back {
+        font-size: 16px;
+    }
 }
 
 /* .card:hover {
@@ -83,4 +101,5 @@ body {
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+    cursor: pointer;
 }
