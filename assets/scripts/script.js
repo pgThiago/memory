@@ -72,12 +72,8 @@ function createCardFace(face, card, element){
 }
 
 function restart(){
-    window.reload();
+    game.clearCards();
+    let gameOverLayer = document.getElementById('game-over');
+    gameOverLayer.style.display = 'none';   
+    startGame();
 }
-
-// function restart(){
-//     game.clearCards();
-//     let gameOverLayer = document.getElementById('game-over');
-//     gameOverLayer.style.display = 'none';   
-//     startGame();
-// }
