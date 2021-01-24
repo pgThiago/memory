@@ -19,8 +19,8 @@ body {
     width: 700px;
     
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     
     margin-top: 5%;
     gap: 20px;
@@ -45,6 +45,12 @@ body {
 
     .card-back {
         font-size: 16px;
+    }
+
+    .card-front, .card-back {
+        width: 70%;
+        height: 70%;
+        
     }
 }
 
